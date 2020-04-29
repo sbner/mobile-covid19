@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Autohonda | COVID19</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<header>
+		<nav class="navbar shadow navbar-light justify-content-center align-middle">
+		  <a class="nav-brand" href="http://autohonda.net"><img src="logo_autohonda.png" id="logo"></a>
+		  <span class="vl"></span>
+		  <span class="nav-text">COVID-19</span>
+		</nav>
+	</header>
+	<section>
+		<div class="container">
+
+			<div class="row justify-content-md-center">
+				<div class="col">
+					<span><strong>Guia Rápido - Novidades Relacionadadas à COVID-19</strong></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<p>Confira as últimas notícias e mudanças ocasionadas pela pandemia do coronavirus</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<span>Veja a lista de todos os boletins sobre o tema:</span>
+				</div>
+			</div>
+
+			<div id="article-menu" class="row">
+				<div class="col">
+					<select class="custom-select" id="article" name="article" onchange="myFunction()">
+						<option value="lopesdasilva/04.27-Medidas_Tributarias-Novos_Servicos_On_Line_Procuradoria_Geral_da_Fazenda_Nacional.pdf">04.27 - Medidas Tributárias - Novos Serviços On Line Procuradoria Geral da Fazenda Nacional</option>
+						<option value="lopesdasilva/04.27-Portaria_10.486_de_22.04.2020-Regulamentacao_da_Medida_Provisoria_936.pdf">04.27 - Portaria 10.486 de 22.04.2020 - Regulamentação da Medida Provisória 936</option>
+						<option value="lopesdasilva/04.17-STF_mantem_intacta_MP_936.pdf">04.17 - STF mantém intacta MP 936</option>
+						<option value="lopesdasilva/04.15-Resumo_Questoes_Ligadas_ao_Direito_do_Trabalho.pdf">04.15 - Resumo Questões Ligadas ao Direito do Trabalho</option>
+						<option value="lopesdasilva/04.14-Lista_de_Medidas_Tributarias.pdf">04.14 - Lista de Medidas Tributárias</option>
+						<option value="lopesdasilva/04.08-MP_936-Questionamentos_Empregados_Comissionados.pdf">04.08 - MP 936 - Questionamentos Empregados Comissionados</option>
+						<option value="lopesdasilva/04.05-MP_927-Medidas_Tributarias-Suspensao_Recolhimento_FGTS.pdf">04.05 - MP 927 - Medidas Tributárias - Suspensão Recolhimento FGTS</option>
+						<option value="lopesdasilva/04.02-MP_931-Alteracao_Lei_de_Sociedade_Anonima_Limitada_e_Cooperativa.pdf">04.02 - MP 931 - Alteração Lei de Sociedade Anônima Limitada e Cooperativa</option>
+						<option value="lopesdasilva/04.02-MP_936-Programa_Emergencial_de_Manutencao_do_Emprego_e_da_Renda.pdf">04.02 - MP 936 - Programa Emergencial de Manutenção do Emprego e da Renda</option>
+						<option value="lopesdasilva/03.30-Compilado_Questoes_do_Direito_Trabalhista.pdf">03.30 - Compilado Questões do Direito Trabalista</option>
+						<option value="lopesdasilva/03.27-Restricao_e_Rescisao_CLT.pdf">03.27 - Restrição e Rescisão CLT</option>
+						<option value="lopesdasilva/03.26-Simples_Nacional-Vencimentos_Prorrogados.pdf">03.26 - Simples Nacional - Vencimentos Prorrogados</option>
+						<option value="lopesdasilva/03.26-Lista_de_Medidas_Tributarias.pdf">03.26 - Lista de Medidas Tributárias</option>
+						<option value="lopesdasilva/03.26-Deferimento_do_Recolhimento_do_FGTS-Regulamentacao_Caixa.pdf">03.26 - Deferimento do Recolhimento do FGTS - Regulamentação Caixa</option>
+						<option value="lopesdasilva/03.26-Alternativas_para_Ferias_Individuais_ou_Coletivas.pdf">03.26 - Alternativas para Férias Individuais ou Coletivas</option>
+						<option value="lopesdasilva/03.26-Alternativas_de_Reducao_de_Jornada_e_Salario.pdf">03.26 - Alternativas de Redução de Jornada e Salário</option>
+						<option value="lopesdasilva/03.24-MP_928-Medidas_de_Enfrentamento_da_Emergencia_de_Saude_Publica.pdf">03.24 - MP Nº 928 - Medidas de Enfrentamento da Emergência de Sáude Pública</option>
+						<option value="lopesdasilva/03.24-MP_928-Prestacao_de_Informacoes.pdf">03.24 - MP 928 - Prestação de Informações</option>
+						<option value="lopesdasilva/03.23-Suspensao_Prazos_Procedimentos_Adm.pdf">03.23 - Suspensão Prazos Procedimentos Adm</option>
+						<option value="lopesdasilva/03.23-Parcelamento_Divida_Uniao.pdf">03.23 - Parcelamento  Divida União</option>
+						<option value="lopesdasilva/03.23-MP_927-Medidas_Trabalhistas.pdf">03.23 - MP 927 - Medidas Trabalhistas</option>
+						<!-- Atenção para esse link pois "?" -->
+						<option value="lopesdasilva/03.23-Home-Office-Voce_esta_pronto.pdf">03.23 - Home-Office - Você está pronto?</option>
+						<option value="lopesdasilva/03.22-MP_927-Decreto_de_Calamidade_Publica-Medidas_Trabalhistas.pdf">03.22 - MP Nº 927 - Decreto de Calamidade Pública - Medidas Trabalistas</option>
+						<option value="lopesdasilva/03.19-Suspensao_Atendimento_Show_Room_em_SP.pdf">03.19 - Suspensão Atendimento Show Room em SP</option>
+						<option value="lopesdasilva/03.18-Banco_de_Horas-Como_agir_em relacao_aos_empregados_Alternativas.pdf">03.18 - Banco de Horas - Como agir em relaçao aos empregados Alternativas</option>
+					</select>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col">
+					<button type="button" class="btn btn-success" onclick="myClick()">Abrir</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<article>
+		<div class="container">
+			<div class="card">
+			  <div class="card-header">
+			    Último Boletim
+			  </div>
+			  <div class="card-body">
+			    <h5 class="card-title">Medidas Tributária - Novos Serviços On Line Procuradoria Geral da Fazenda Nacional</h5>
+			    <p class="card-text">Data: 27.04.20</p>
+			    <button id='buttonabrir' class="btn btn-success" onclick="window.open('lopesdasilva/04.27-Medidas_Tributarias-Novos_Servicos_On_Line_Procuradoria_Geral_da_Fazenda_Nacional.pdf')">Abrir</button>
+			  </div>
+			</div>
+		</div>
+	</article>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		
+		var input = document.getElementById('article').value;
+
+		function myFunction() {
+			input = document.getElementById('article').value;
+		}
+
+		function myClick() {
+			window.open(input);
+		}
+
+		function myDownload() {
+			document.getElementsByClassName('download').download
+		}
+
+		
+	</script>
+
+</body>
+</html>
